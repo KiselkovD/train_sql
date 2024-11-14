@@ -7,7 +7,7 @@
 			"command": [
 				// list of commands
 				"git add . \n",
-				"git commit -m 'first working version'  \n",
+				"git commit -m 'Automated commit'  \n",
 				"git push \n"
 			]
 		},
