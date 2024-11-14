@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "git automated commit",
+			"type": "shell",
+			"command": [
+				// list of commands
+				"git add . \n",
+				"git commit -m 'first working version'  \n",
+				"git push \n"
+			]
+		},
+		{
+			"label": "mySql start",
+			"type": "shell",
+			"command": [
+				// list of commands
+				"docker stop train_sql-mysql-1 \n",
+				"docker remove train_sql-mysql-1 \n",
+				"docker-compose up -d \n"
+			]
+		},
+		{
+			"label": "mySql run",
+			"type": "shell",
+			"command": [
+				// list of commands
+				"docker exec -it train_sql-mysql-1 mysql -uroot -ppassw \n"
+			]
+		}
+	]
+}
